@@ -15,7 +15,7 @@ class HoardingAddressSerializer(serializers.ModelSerializer):
                   'city', 'state',
                   'pincode', 
                   'latitude', 'longitude', 
-                  'location_type']
+                  'location_type'] 
         
 class HoardingSerializer(serializers.ModelSerializer):
     owner = OwnerSerializer(read_only=True)
